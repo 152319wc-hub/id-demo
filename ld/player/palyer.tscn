@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://b0gamn6ti57sb"]
+
+[ext_resource type="Script" uid="uid://h3kg0tfj0c02" path="res://player/scripts/palyer.gd" id="1_ooufw"]
+[ext_resource type="Texture2D" uid="uid://cor6ppyjfiuu2" path="res://icon.svg" id="2_bb1yp"]
+[ext_resource type="Script" uid="uid://cfu2refeh5p60" path="res://player/states/idle.gd" id="3_egq2j"]
+[ext_resource type="Script" uid="uid://cjssj0xxkeru" path="res://player/states/run.gd" id="4_f8tbl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_egq2j"]
+size = Vector2(128, 128)
+
+[node name="Palyer" type="CharacterBody2D" unique_id=1139836205]
+script = ExtResource("1_ooufw")
+
+[node name="States" type="Node" parent="." unique_id=1531774050]
+
+[node name="Idle" type="Node" parent="States" unique_id=1705955253]
+unique_name_in_owner = true
+script = ExtResource("3_egq2j")
+
+[node name="Run" type="Node" parent="States" unique_id=1799164885]
+unique_name_in_owner = true
+script = ExtResource("4_f8tbl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=949814684]
+position = Vector2(0, -64)
+texture = ExtResource("2_bb1yp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=162180866]
+position = Vector2(0, -64)
+shape = SubResource("RectangleShape2D_egq2j")
+
+[node name="Label" type="Label" parent="." unique_id=1866896121]
+offset_left = -50.0
+offset_top = -165.0
+offset_right = 50.130432
+offset_bottom = -118.0
+text = "palyer"
+horizontal_alignment = 1
+vertical_alignment = 1
