@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "sessions": {
+    "9c8056a85f684a3c90c2f0dbb82c4fd1": [
+      {
+        "expertId": "GodotGameScriptEngineer",
+        "name": "节点通",
+        "profession": "Godot游戏脚本工程师",
+        "avatarUrl": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/experts/avatars/12-GameDevelopment/GodotGameScriptEngineer/GodotGameScriptEngineer.png",
+        "promptUrl": "https://acc-1258344699.cos.accelerate.myqcloud.com/workbuddy/experts/experts/12-GameDevelopment/GodotGameScriptEngineer/GodotGameScriptEngineer_zh.md",
+        "usedAt": 1776529574420,
+        "industryId": "all"
+      }
+    ]
+  },
+  "lastUpdated": 1776530084436
+}
