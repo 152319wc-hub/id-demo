@@ -13,14 +13,16 @@ func _ready() -> void:
 	
 	var camera : Camera2D = null
 	
+	
 	while not camera :
 		await get_tree().process_frame
 		camera = get_viewport().get_camera_2d()
-	
+	camera.limit_enabled = true
 	camera.limit_left = int ( global_position.x)
 	camera.limit_top = int ( global_position.y)
 	camera.limit_right = int ( global_position.x) + width
 	camera.limit_bottom = int ( global_position.y) + height
+	
 	pass
 
 func _draw() -> void:

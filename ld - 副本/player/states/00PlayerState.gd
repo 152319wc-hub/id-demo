@@ -11,6 +11,7 @@ var next_state : PlayerState
 @onready var jump: PlayerStateJump = %Jump
 @onready var fall: PlayerStateFall = %Fall
 @onready var attack: PlayerStateAttack = %Attack
+@onready var die: PlayerStateDie = %Die
 
 
 

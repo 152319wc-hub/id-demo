@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://5rea604q4lib" path="res://player/states/fall.gd" id="5_bvx8t"]
 [ext_resource type="Script" uid="uid://b4uihklvx13jc" path="res://player/states/attack.gd" id="6_1unlc"]
 [ext_resource type="PackedScene" uid="uid://d0vwpd7dft8f7" path="res://bullet.tscn" id="7_a2471"]
+[ext_resource type="Script" uid="uid://dwa58c61v8pic" path="res://player/states/die.gd" id="8_a2471"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_egq2j"]
 size = Vector2(128, 128)
@@ -39,6 +40,10 @@ unique_name_in_owner = true
 script = ExtResource("6_1unlc")
 bullet_scene = ExtResource("7_a2471")
 
+[node name="Die" type="Node" parent="States" unique_id=2115508114]
+unique_name_in_owner = true
+script = ExtResource("8_a2471")
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=949814684]
 position = Vector2(0, 1)
 texture = ExtResource("2_bb1yp")
@@ -59,5 +64,6 @@ vertical_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=330706389]
 limit_enabled = false
+limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0

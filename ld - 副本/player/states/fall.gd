@@ -34,6 +34,8 @@ func handle_input(_event : InputEvent) -> PlayerState :
 			buffer_timer = jump_buffer_time
 	if _event.is_action_pressed("attack") :
 		return attack
+	if _event.is_action_pressed("die"):
+		return die
 	return next_state 
 	
 func process(_delta: float ) -> PlayerState :

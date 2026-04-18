@@ -12,12 +12,16 @@ size = Vector2(255.92706, 256.17307)
 size = Vector2(255, 258)
 
 [node name="Node2D" type="Node2D" unique_id=2038227363]
+position = Vector2(0, -1)
+metadata/_edit_vertical_guides_ = [-114.0]
+metadata/_edit_horizontal_guides_ = [-185.0]
 
 [node name="LevelBounds" type="Node2D" parent="." unique_id=1052996617]
 z_index = 256
+scale = Vector2(1, 1.0260856)
 script = ExtResource("4_0hol4")
-width = 7072
-height = 5358
+width = 6624
+height = 5390
 metadata/_custom_type_script = "uid://cubncuv2di3ld"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=179986696]
@@ -44,7 +48,7 @@ shape = SubResource("RectangleShape2D_0e48y")
 
 [node name="Sprite2D8" type="Sprite2D" parent="." unique_id=212328655]
 position = Vector2(5379.9995, 4876)
-scale = Vector2(4.599565, 0.8354294)
+scale = Vector2(4.594378, 0.8354294)
 texture = ExtResource("1_wtcfe")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D8" unique_id=1910832806]
