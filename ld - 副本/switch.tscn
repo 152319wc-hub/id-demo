@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://1spt4max1i5k"]
+
+[ext_resource type="Script" uid="uid://sahq11icmhxl" path="res://general/scripts/switch.gd" id="1_8307x"]
+[ext_resource type="Texture2D" uid="uid://cor6ppyjfiuu2" path="res://icon.svg" id="1_it01i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ds62l"]
+size = Vector2(6.378488, 20)
+
+[node name="Switch" type="Area2D" unique_id=344926114]
+position = Vector2(0, -9.536743e-07)
+scale = Vector2(0.62710786, 1.3457849)
+collision_mask = 10
+script = ExtResource("1_8307x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=158204295]
+position = Vector2(9.536743e-07, 5.9604645e-07)
+scale = Vector2(-0.045820843, -0.16758898)
+texture = ExtResource("1_it01i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=426895042]
+position = Vector2(1.188086e-07, 0.74306154)
+shape = SubResource("RectangleShape2D_ds62l")

@@ -18,6 +18,7 @@ var previous_state : PlayerState:
 var direction : Vector2 = Vector2.ZERO
 var gravity : float = 1280
 var gravity_mulitplier : float = 1
+
 #endregion
 
 
@@ -26,6 +27,9 @@ func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta * gravity_mulitplier
 	move_and_slide()
 	change_state(current_state.physics_process(delta))
+	
+	
+	
 	
 	pass
 
@@ -96,3 +100,5 @@ func update_direction() -> void :
 	direction =Vector2(x_axis,y_axis)
 	
 	pass
+	
+	

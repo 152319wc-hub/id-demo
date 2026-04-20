@@ -9,8 +9,9 @@ func enter() -> void:
 	# player.collision_layer = 0
 	# player.collision_mask = 0
 
-	
-	print("玩家死亡")
+	var death_screen := player.get_node("CanvasLayer/DeathScreen")
+	death_screen.visible = true
+
 
 
 
